@@ -13,12 +13,12 @@ https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries
 """
 # СПИСКИ, создание
 empty_list = list()
-list1= ['Toyota', 'RAV4', 2.2, 60807]
+list1 = ['Toyota', 'RAV4', 2.2, 60807]
 list2 = [[1, 2, 3], ['a', 'b', 'c'], ['One', 'Two', 'Three']]
 list3 = list('cat')               # ['c', 'a', 't'] преобразования строки в список
 list4 = list(('c', 'a', 't'))     # ['c', 'a', 't'] преобразования кортежа в список
 list5 = 'q/w/e/r/t/y'.split('/')  # ['q', 'w', 'e', 'r', 't', 'y']
-print(list5)
+print(list3)
 
 # извлечение
 var = list1[0]      # 'Toyota'
