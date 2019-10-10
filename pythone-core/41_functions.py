@@ -146,25 +146,25 @@ for x in my_range(1, 4, ):  # for по сути вызывает next()
 
 #  10. Декораторы - это функция, которая принимает одну функцию в качестве аргумента и возвращает другую функцию
 def func_decorator(func):
-    def new_function(*args, **kwargs):
+    def new_function1(*args, **kwargs):
         print('Running function:', func.__name__)
         print('Positional arguments:', args)
         print('Keyword arguments:', kwargs)
         result = func(*args, **kwargs)
         print('Result func_decorator:', result)
         return result
-    return new_function
+    return new_function1
 
 def square_it(func):  #  ещё один декоратор
-    def new_function(*args, **kwargs):
+    def new_function2(*args, **kwargs):
         result = func(*args, **kwargs)
         print('Result square_it:', result * result)
         return result * result
 
-    return new_function
+    return new_function2
 
 
-# Декорируемый функции
+# Декорируемая функция
 def add_ints_1(a, b):
     return a + b
 
