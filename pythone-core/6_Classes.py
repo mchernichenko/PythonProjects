@@ -20,7 +20,7 @@
     __str__  вызывается при использовании print()
     __repr__ вызывается просто при выводе значения переменной ссылающейся на обект
 
-    Про магический методы: https://docs.python.org/3.7/reference/datamodel.html?highlight=__add__#basic-customization
+    Про магические методы: https://docs.python.org/3.7/reference/datamodel.html?highlight=__add__#basic-customization
 """
 
 class Duck():

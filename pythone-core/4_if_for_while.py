@@ -92,7 +92,7 @@ print(list(range(0, 11, 2)))
 # Включение словаря: { выражение_ключа: выражение_значения for выражение in итерабельный объект }
 # Включение множеств: {выражение for элемент in итерабельный объект if условие}
 number_list = [number-1 for number in range(1, 6)]  #  [0, 1, 2, 3, 4]
-number_list = [number for number in range(1,6) if number % 2 == 1]  # [1, 3, 5]
+number_list = [number for number in range(1, 6) if number % 2 == 1]  # [1, 3, 5]
 
 rows = range(1,4)
 cols = range(1,3)
