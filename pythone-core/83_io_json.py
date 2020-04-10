@@ -1,8 +1,13 @@
 """
 существует всего один модуль json для работы с данным форматом файлов
 https://python-scripts.com/json
+
+Тестирование JSON: http://echo.jsontest.com/insert-key-here/insert-value-here/key/value
+https://jsonplaceholder.typicode.com/
+
 """
 import json
+import requests
 
 json_obj = \
 {
@@ -40,3 +45,11 @@ with open("test_data_file.json", "r") as read_file:
     data = json.load(read_file)
 
 print('Десериализованный JSON: ', data)
+
+#
+response = requests.get("https://jsonplaceholder.typicode.com/todos")
+todos = json.loads(response.text)  # получаем список словарей
+print(todos == response.json())  # True
+print(type(todos))  # <class 'list'>
+
+print('QQQ: ', todos[:2])  # распечатать первые два элемента списка
